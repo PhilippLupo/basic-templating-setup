@@ -22,8 +22,8 @@
 2. Run `npm install` to ensure the required dependencies are installed.
 
 ### Run
-1. Run `gulp serve` to start a local development server
+1. Run `gulp` to start a local development server
 
 ### Build
-1. Run `gulp build`
+1. Run `gulp --production` to get minified and compressed files
 2. Built files are located in the generated `dist` folder
