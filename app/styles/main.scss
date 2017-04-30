@@ -1,0 +1,22 @@
+// UIKI - only what you really need should be imported
+@import '../../node_modules/uikit/dist/scss/core/variables.scss';
+@import '../../node_modules/uikit/dist/scss/uikit-mixins.scss';
+@import '../../node_modules/uikit/dist/scss/core/flex.scss';
+@import '../../node_modules/uikit/dist/scss/core/grid.scss';
+
+@import 'variables';
+
+// UTIL
+@import 'util/*';
+
+// BASE
+@import 'base/*';
+
+// COMPONENTS
+@import 'layout/*';
+
+// COMPONENTS
+@import 'components/*';
+
+// STATES
+@import 'states/*';

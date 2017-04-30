@@ -1,0 +1,21 @@
+.example-hero {
+    height: 70vh;
+    background-image: #fff;
+    transition: background-image 0.5 ease;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.example-hero__headline {
+    font-weight: 100;
+    text-transform: uppercase;
+    color: $black;
+    //variable from uikit here
+    @media(min-width: $breakpoint-medium) {
+        font-size: 3em;
+    }
+}
+
+.example-hero__inner {
+    height: 100%;
+}
