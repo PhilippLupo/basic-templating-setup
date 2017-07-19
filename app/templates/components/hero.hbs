@@ -1,0 +1,18 @@
+<section class="hero">
+  <div class="hero__main">
+    <h1 class="hero__main-headline">Responsive Spaces</h1>
+  </div>
+  <div class="hero__teaser"></div>
+  <div class="hero__video">
+    {{#if vimeo}}
+      <div class="hero__video-inner">
+        <iframe src="https://player.vimeo.com/video/9492597?color=25a4d4&title=0&byline=0&portrait=0&autoplay=1&loop=1&autopause=0&quality=1080p" width="100%" height="600" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen data-video-controller="vimeo"></iframe>
+      </div>
+    {{else}}
+      <video poster="images/poster.jpg" class="hero__video--hmtl5" width="100%" height="100%" autoplay loop data-video-controller="html5" muted webkit-playsinline playsinline>
+        <source src="videos/teaser.mp4" type="video/mp4">
+      </video>
+      <button class="hero__video-button" data-video-button></button>
+    {{/if}}
+  </div>
+</section>

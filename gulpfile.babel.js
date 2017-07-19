@@ -116,7 +116,15 @@ gulp.task('images', function () {
     }))
 })
 
-gulp.task('default', ['clean', 'version', 'templates', 'styles', 'scripts', 'scripts:vendor', 'fonts', 'images', 'content'], function () {
+gulp.task('videos', function () {
+  return gulp.src('app/videos/**/*.{mp4}')
+    .pipe(gulp.dest('dist/videos'))
+    .pipe(size({
+      title: 'videos'
+    }))
+})
+
+gulp.task('default', ['clean', 'version', 'templates', 'styles', 'scripts', 'scripts:vendor', 'fonts', 'images', 'content', 'videos'], function () {
   browserSync.init({
     server: {
         baseDir: './dist'
@@ -132,7 +140,7 @@ gulp.task('default', ['clean', 'version', 'templates', 'styles', 'scripts', 'scr
   gulp.watch('dist/**/*.html', reload())
 })
 
-gulp.task('build', ['clean', 'version', 'templates', 'styles', 'scripts', 'scripts:vendor', 'fonts', 'images', 'content'])
+gulp.task('build', ['clean', 'version', 'templates', 'styles', 'scripts', 'scripts:vendor', 'fonts', 'images', 'content', 'videos'])
 
 function string_src(filename, string) {
   var src = require('stream').Readable({ objectMode: true })

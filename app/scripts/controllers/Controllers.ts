@@ -1,2 +1,2 @@
 export { AppController } from './AppController';
-export { ExampleHeroController } from './ExampleHeroController';
+export { VideoController } from './VideoController';

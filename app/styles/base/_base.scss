@@ -2,3 +2,46 @@ html, body {
     padding: 0;
     margin: 0;
 }
+
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+button {
+    background: none;
+    border: 0;
+    color: inherit;
+    font: inherit;
+    line-height: normal;
+    padding:0px;
+    margin:0px;
+    overflow: visible;
+    padding: 0;
+    appearance: button; /* for input */
+    -webkit-user-select: none; /* for button */
+        -moz-user-select: none;
+        -ms-user-select: none;
+    box-sizing: border-box;
+    outline:none;
+    border-radius:0;
+    &::-moz-focus-inner {
+        border: 0;
+        padding: 0;
+    }
+    &:hover, &:focus {
+        color:inherit;
+        background:inherit;
+    }
+}
+
+video::-webkit-media-controls-fullscreen-button {
+    display: none;
+}
+video::-webkit-media-controls-play-button {}
+video::-webkit-media-controls-timeline {}
+video::-webkit-media-controls-current-time-display{}
+video::-webkit-media-controls-time-remaining-display {}
+video::-webkit-media-controls-mute-button {}
+video::-webkit-media-controls-toggle-closed-captions-button {}
+video::-webkit-media-controls-volume-slider {}
